@@ -65,6 +65,7 @@ public class HomePage extends BasePage {
      public boolean titleWelcome() {
         boolean isVerified=false;
         System.out.println("WEBPAGE LAUNCHED");
+        waitForSeconds(5);
         WebElement title = driver.findElement(By.xpath("//h1[text()='Welcome!']"));
         isVerified=verifyElement(title);
         System.out.println("Element Found");
