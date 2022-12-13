@@ -63,7 +63,10 @@ public class HomePage extends BasePage {
     }
 
     public void googleLogo() {
-        System.out.println("GOOGLE LAUNCHED");
+        System.out.println("WEBPAGE LAUNCHED");
+        WebElement title = driver.findElement(By.xpath("//h1[text()='Welcome!']"));
+        verifyElement(title);
+        System.out.println("Element Found");
     }
 
     public void mouseOverToTab(String strTab) {
