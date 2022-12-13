@@ -59,7 +59,7 @@ public class HomePage extends BasePage {
 
 
     public void visit() {
-        visit(TestDataUtil.getValue("https://www.google.com/"));
+        visit(TestDataUtil.getValue("http://localhost:3000/TestWebsite"));
     }
 
     public void googleLogo() {
