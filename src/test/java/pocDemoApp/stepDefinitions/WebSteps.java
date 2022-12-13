@@ -50,9 +50,8 @@ public class WebSteps {
 
     @Then("I should see google logo")
     public void iShouldSeeGoogleLogo() {
-        demoPageContainer.homePage.visit();
+        Assert.assertTrue(demoPageContainer.homePage.titleWelcome());
     }
-
 
 
 
