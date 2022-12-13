@@ -62,11 +62,13 @@ public class HomePage extends BasePage {
         visit(TestDataUtil.getValue("http://localhost:3000/TestWebsite"));
     }
 
-    public void googleLogo() {
+     public boolean titleWelcome() {
+        boolean isVerified=false;
         System.out.println("WEBPAGE LAUNCHED");
         WebElement title = driver.findElement(By.xpath("//h1[text()='Welcome!']"));
-        verifyElement(title);
+        isVerified=verifyElement(title);
         System.out.println("Element Found");
+        return isVerified;
     }
 
     public void mouseOverToTab(String strTab) {
